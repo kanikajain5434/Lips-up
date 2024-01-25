@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MAKEOVER</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -20,23 +21,35 @@
             <li class="item"><a>About us</a></li>
         </ul>
         <div class="nav-icons">
-            <a href=""><i class="call"></i></a>
-            <a href=""><i class="shop"></i></a>
+            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
     </nav>
+
+    <!-- HOME SECTION STARTS -->
+
     <section id="home">
-        <h1 class="h-primary">Wanna try something new ?</h1>
-        <button class="btn">Fix an appointment Now</button>
-    </section>
-    <section class="products-container">
-        <h1 class="h-primary center">Our facilities</h1>
-        <div id="facilities">
-            <div class="box1">
-                <h2>Skin Care</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, autem ea, impedit dolorem assumenda
-                    iusto laboriosam unde suscipit perspiciatis sequi pariatur voluptatem ab tempore. Ea.</p>
+        <!-- Swiper -->
+        <div class="swiper mySwiper home swipper roow container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide row flex">
+                    <div class="home-content">
+                        <div>
+                            <h1>Wanna try something new??</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis recusandae quia aperiam,
+                                id laudantium quidem?</p>
+                            <a href="" class="main-btn active">ix an Appointment</a>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/pic 2.jpg" alt="">
+                    </div>
+                </div>
             </div>
+            <div class="swiper-pagination"></div>
         </div>
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     </section>
 
 </body>
