@@ -1,12 +1,32 @@
 /* CSS reset */
-*{
+@import url('https://fonts.googleapis.com/css2?family=Allan:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300&display=swap');
+
+*, *::before, *::after{ 
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
+*{
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-family: "Allan", serif;
+}
+
+
 /* navigation bar  */
 #navbar{
     position: relative;
     display: flex;
+    position: sticky;
+    top: 0; right: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 50px;
+    background-color: black;
+    box-shadow: 0 -2px 4px rgb(0 ,0 , 0.2)inset;
+    z-index: 111;
 }
 
 #company{
@@ -59,6 +79,7 @@
     flex-direction: column;
     height: 400px;
     
+    
 }
 #home::before{
     content: "";
@@ -71,7 +92,46 @@
 }
 .h-primary{
     font-size: 2.3rem;
-    padding: 110px 43px;
+    padding: 63px 52px 13px 64px;
     font-family: "Salsa variant0", 'Tofu';
  
 }
+.btn{
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color: white;
+    margin: 47px 93px;
+    height: 34px;
+    width: 228px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: grey;
+}
+#facilities{
+    margin: 34px;
+    display: flex;
+    position: relative;
+}
+#facilities .box1{
+    border: 2px solid red;
+    height: 300px;
+    width: 300px;
+}
+
+#facilities .box1 h2{
+    background-color: white;
+}
+#facilities .box1::before{
+        content: "";
+        position: absolute;
+        background: url('img/pic\ 5\(1\).jpg') no-repeat center center/cover ;
+        height: 89%;
+        width: 24%;
+        z-index: -1;
+        opacity: 0.89;
+}
+
+
+
